@@ -2,8 +2,8 @@ Johnny Castaway - This time in boxedwine via emscript
 
 This really illustrates the difference in maturity between the dosbox and winebox projects. 
 
-Dosbox - Emulating dos + win3.1 + johnny - 20% utilization on my i5 laptop
-Winebox - Emulating win3.1 + johnny - 26% utilization on my i5 laptop
+  1. Dosbox - Emulating dos + win3.1 + johnny - 20% utilization on my i5 laptop
+  2. Winebox - Emulating win3.1 + johnny - 26% utilization on my i5 laptop
 
 So, this is noticibly slower than my previous web johnny.
 
