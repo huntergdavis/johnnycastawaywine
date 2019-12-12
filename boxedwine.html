@@ -108,12 +108,7 @@
       <span id="sound-checkbox" style="display: none">
           <input type="checkbox" id="soundToggle" onclick="toggleSound();" label="whatever">Enable Sound</input>
       </span>
-      <input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer
-      <input type="checkbox" id="showConsole" onclick="toggleConsole();" checked>Show console
-      &nbsp;&nbsp;&nbsp;
-      <input type="checkbox" id="resize">Resize canvas
-      <input type="button" value="Fullscreen" onclick="Module.requestFullScreen(document.getElementById('pointerLock').checked, document.getElementById('resize').checked)">
-    </div>
+     </div>
     <div id="dropzone">
         <div class="emscripten_border">
             <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
@@ -972,13 +967,9 @@ function createFile(dir, name, buf)
     }
 }
 function toggleConsole() {
-    var el = document.getElementById('showConsole');
     var console = document.getElementById('output');
-    if(el.checked){
-        console.style.display = '';
-    }else{
-        console.style.display = 'none';
-    }
+    console.style.display = 'none';
+    
 }
 function toggleSound() {
     var el = document.getElementById('soundToggle');
