@@ -9,3 +9,5 @@ So, this is noticibly slower than my previous web johnny.
 
 On the other hand, this provides a nice executable base for when/if winebox improves in speed or another wine via javscript is released. 
 
+
+![](johnny_boxedwine_25_percent.png)
