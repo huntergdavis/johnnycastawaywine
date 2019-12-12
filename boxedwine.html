@@ -12,7 +12,10 @@
       div.emscripten { text-align: center; }
       div.emscripten_border { border: 1px solid black; }
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-      canvas.emscripten { border: 0px none; }
+      canvas.emscripten { 
+            border: 0px none; 
+            pointer-events: none;
+      }
       .spinner {
           height: 50px;
           width: 50px;
@@ -28,6 +31,7 @@
           border-radius: 100%;
           background-color: rgb(200,100,250);
       }
+      
     @-webkit-keyframes rotation {
         from {-webkit-transform: rotate(0deg);}
         to {-webkit-transform: rotate(360deg);}
@@ -156,9 +160,9 @@
         var dirPrefix = getFileDirectory();
         var isAutoRunSet = getAutoRun();
         var extraZipFiles = getZipFileList("extra"); //MANUAL:"dlls.zip;fonts.zip";
-        var appZipFile = getZipFile("app"); //MANUAL:"chomp.zip";
+        var appZipFile = "johnny.zip";
         var rootZipFile = getZipFile("root"); //MANUAL:"base.zip";
-        var Program = getExecutable(); //MANUAL:"CHOMP.EXE";
+        var Program = "johnny.bat";
         var WorkingDir = getWorkingDirectory(); //MANUAL:"";
 
         var isSoundEnabled = getSound();
